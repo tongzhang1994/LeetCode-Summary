@@ -1,4 +1,4 @@
-# 2Sum, 3Sum, 4Sum
+# N Sum Summary
 
 ## [2Sum](http://oj.leetcode.com/problems/two-sum/)
 
