@@ -1,4 +1,4 @@
-# N Sum Summary
+# 2Sum, 3Sum, 4Sum
 
 ## [2 Sum](http://oj.leetcode.com/problems/two-sum/)
 
@@ -135,11 +135,15 @@ public List<List<Integer>> fourSum(int[] nums, int target) {
 ```
 
 However, if we think more, we can still optimize this solution.
+
 We can calculate all two-tuples and do `Two Sum` algorithm on all these two-tuples.  Recall that `Two Sum` algorithm is a sort plus a linear iterate. Here we have total O((n-1)+(n-2)+...+1)=O(n(n-1)/2)=`O(n^2)` two-tuples and the sorting for these pairs would run in O(n^2\*log(n^2))=O(n^2\*2logn)=`O(n^2*logn)`, which would be faster than O(n^3).
 
 But to do this, we have to deal with the following details.
+
 First, we need a data structure to store pairs and their indices. This is because we have to examine whether two found pairs which can add up to 'target' are the same one by checking their indices.
+
 Second, we need to define `comparable() method` on 'pairs' since we have to sort these pairs.
+
 Third, we need to define `hashcode()` and `equals()` method on 'Tuples' to store current sum in a `hashset` because we have to check all matched and cannot skip duplicate values as the 2Sum algorithm.
 
 ```
