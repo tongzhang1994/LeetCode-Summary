@@ -38,7 +38,7 @@ Time: O(n). Space: O(1)
             int swaps=nums.length/gcd-1,j=i;
             for(int m=0;m<swaps;m++){
                 j=(j+k)%nums.length;
-                nums[i]^=nums[j];
+                nums[i]^=nums[j];//XOR swapping
                 nums[j]^=nums[i];
                 nums[i]^=nums[j];
             }
@@ -49,7 +49,20 @@ Time: O(n). Space: O(1)
         else    return gcd(b, a % b);
     }
 ```
-**EXPLANATION:**
+
+***XOR Swapping Algorithm***
+
+Using XOR can swap two elements without using extra memory. Look at the following code with comments and you will understand how it works.
+
+```
+void swap(int a, int b){  
+ a ^= b;  
+ b ^= a;  //b=b^(a^b)=a
+ a ^= b;  //a=(a^b)^(b^a^b)=b  
+}  
+```
+
+**[EXPLANATION](https://discuss.leetcode.com/topic/11349/my-three-way-to-solve-this-problem-the-first-way-is-interesting-java/20)**
 
 Here use a example input array [1,2,3,4,5,6,7,8] (n = 8) to explain:
 
