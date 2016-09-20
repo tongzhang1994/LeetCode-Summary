@@ -10,7 +10,7 @@ However, we can optimize this problem by the following two solutions.
 
 The first one is using a `HashMap` to memorize the elements appeared and check if the new element can pair with a previous one in the map and add up to 'target'. This algorithm will run in `O(n)` time and `O(n)` space when accessing the hashmap takes constant time.
 
-```  
+```java  
 public int[] twoSum(int[] nums, int target) {
 	HashMap<Integer,Integer> map=new HashMap<>();
 	for(int i=0;i<nums.length;i++){
@@ -25,7 +25,7 @@ public int[] twoSum(int[] nums, int target) {
 
 First we have to sort the array. Then we `squeeze two pointers` from each end of the array to find the target pair.
 
-```
+```java 
 public int[] twoSum(int[] numbers, int target) {    
     Arrays.sort(numbers);  
     int l = 0,r = numbers.length-1;  
@@ -51,7 +51,7 @@ This is an extension of `2Sum` and the `brute force` solution takes `O(n^3)` tim
 
 In this problem, there may contain duplicates in the input set, so the `hashmap` solution might not work. It could be easier to skip duplicate triplets when the array is sorted. Thus we should consider sorting the array and use `two pointers`.
 
-```
+```java 
 public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res=new ArrayList<List<Integer>>();
         Arrays.sort(nums);//makes it easier to skip duplicates
@@ -84,7 +84,7 @@ You see, sorting the array makes it easier to avoid duplicates by skipping the n
 
 This is also an extension of `2Sum`. And we can't use the `HashMap` approach since it looks for the closest answer instead of the exact one. Similarly we use `two pointers` and this time we should also keep the sum of the triplet closest to 'target'.
 
-```
+```java 
 public int threeSumClosest(int[] nums, int target) {
         int res=nums[0]+nums[1]+nums[nums.length-1];
         Arrays.sort(nums);
@@ -107,7 +107,7 @@ The code runs in O(nlogn+n^2)=`O(n^2)` time. Space complexity is `O(n)`.
 
 This problem can be solved in `O(n^3)` apparently. Similar as before, the code is as follows.
 
-```
+```java 
 public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> res=new ArrayList<List<Integer>>();
         Arrays.sort(nums);
@@ -146,7 +146,7 @@ Second, we need to define `comparable() method` on 'pairs' since we have to sort
 
 Third, we need to define `hashcode()` and `equals()` method on 'Tuples' to store current sum in a `hashset` because we have to check all matched and cannot skip duplicate values as the 2Sum algorithm.
 
-```
+```java 
 private ArrayList<ArrayList<Integer>> twoSum(ArrayList<Pair> pairs, int target){  
     HashSet<Tuple> hashSet = new HashSet<Tuple>();  
     int l = 0;  

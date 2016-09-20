@@ -8,7 +8,7 @@ There are several ways to deal with `String Rotation`. Now we will talk about th
 
 Time: O(n). Space:O(n).
 
-```
+```java 
 	public void rotate(int[] nums, int k) {
         int[] tmp=new int[nums.length];
         for(int i=0;i<nums.length;i++)
@@ -30,7 +30,7 @@ Time: O(n). Space: O(1)
 
 Time: O(n). Space: O(1)
 
-```
+```java 
 	public void rotate(int[] nums, int k) {
         k%=nums.length;
         int gcd=gcd(nums.length,k);
