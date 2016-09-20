@@ -70,13 +70,13 @@ Here use a example input array [1,2,3,4,5,6,7,8] (n = 8) to explain:
 
 GCD = gcd(3,8) = 1, which means there is only one path.
 
-Count = (n / GCD) - 1 = 7, which means we need 7 swaps to finish the path. (actually for a path have x element, we need x - 1 swaps)
+Count = (n / GCD) - 1 = 7, which means we need 7 swaps to finish the path. (actually for a path have x element, we need x - 1 swaps).
 
 Then we can simulate the process of the algorithm,
 
 path0(each time swap index0 element and indexPosition element):
 
-[1,2,3,4,5,6,7,8] (position = 3) -> [4,2,3,1,5,6,7,8] (position = 6) -> [7,2,3,1,5,6,4,8](position = 1) -> [2,7,3,1,5,6,4,8](position = 4) -> [5,7,3,1,2,6,4,8](position = 7) -> [8,7,3,1,2,6,4,5](position = 2) -> [3,7,8,1,2,6,4,5](position = 5) -> [6,7,8,1,2,3,4,5] -> finished, total 7 times swap. Final result [6,7,8,1,2,3,4,5]
+[1,2,3,4,5,6,7,8] position = 3 -> [4,2,3,1,5,6,7,8]  position = 6 -> [7,2,3,1,5,6,4,8] position = 1 -> [2,7,3,1,5,6,4,8] position = 4 -> [5,7,3,1,2,6,4,8] position = 7 -> [8,7,3,1,2,6,4,5] position = 2 -> [3,7,8,1,2,6,4,5] position = 5 -> [6,7,8,1,2,3,4,5] -> finished, total 7 times swap. Final result [6,7,8,1,2,3,4,5]
 
 - suppose k = 2:
 
@@ -88,13 +88,13 @@ Give the process:
 
 path0(swap index0 and position element):
 
-[1,2,3,4,5,6,7,8](position = 2) -> [3,2,1,4,5,6,7,8](position = 4) ->[5,2,1,4,3,6,7,8](position = 6) -> [7,2,1,4,3,6,5,8] -> path0 finished
+[1,2,3,4,5,6,7,8] position = 2 -> [3,2,1,4,5,6,7,8] position = 4 ->[5,2,1,4,3,6,7,8] position = 6 -> [7,2,1,4,3,6,5,8] -> path0 finished
 
 Then we continue processing path1(swap index1 and position element):
 
-[7,2,1,4,3,6,5,8](position = 3) -> [7,4,1,2,3,6,5,8](position = 5) -> [7,6,1,2,3,4,5,8](position = 7) ->[7,8,1,2,3,4,5,6] -> path1 finished -> all path finished we get the result [7,8,1,2,3,4,5,6]
+[7,2,1,4,3,6,5,8] position = 3 -> [7,4,1,2,3,6,5,8] position = 5 -> [7,6,1,2,3,4,5,8] position = 7 ->[7,8,1,2,3,4,5,6] -> path1 finished -> all path finished we get the result [7,8,1,2,3,4,5,6]
 
-*NOTE: This algorithm is very similar to the `juggling algorithm` proposed in 'Programming Perl'. Some related links to help understand are as follows.*
+>NOTE: This algorithm is very similar to the `juggling algorithm` proposed in 'Programming Perl'. Some related links to help understand are as follows.
 
 [http://www.geeksforgeeks.org/array-rotation/](http://www.geeksforgeeks.org/array-rotation/)
 
