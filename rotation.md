@@ -95,7 +95,5 @@ Then we continue processing path1(swap index1 and position element):
 [7,2,1,4,3,6,5,8] position = 3 -> [7,4,1,2,3,6,5,8] position = 5 -> [7,6,1,2,3,4,5,8] position = 7 ->[7,8,1,2,3,4,5,6] -> path1 finished -> all path finished we get the result [7,8,1,2,3,4,5,6]
 
 >NOTE: This algorithm is very similar to the `juggling algorithm` proposed in 'Programming Perl'. Some related links to help understand are as follows.
-
 [http://www.geeksforgeeks.org/array-rotation/](http://www.geeksforgeeks.org/array-rotation/)
-
 [http://stackoverflow.com/questions/23321216/rotating-an-array-using-juggling-algorithm](http://stackoverflow.com/questions/23321216/rotating-an-array-using-juggling-algorithm)
