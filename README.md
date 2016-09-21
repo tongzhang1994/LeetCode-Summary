@@ -1,8 +1,8 @@
 # LeetCode-Summary
 
-Hi, everyone. I'm a graduate student majoring in Computer Science in USC. My course starts from this fall(2016) and ends on 2018 spring (2 years). Here is my [Linkedin Profile](https://www.linkedin.com/in/tongzhang1994).
+Hi, everyone. I'm a graduate student majoring in Computer Science in USC. My courses start from this fall(2016) and end in spring 2018(2 years). Here is my [Linkedin Profile](https://www.linkedin.com/in/tongzhang1994).
 
-Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right now, I will keep on the practicing process on [LeetCode OJ](https://leetcode.com/problemset/algorithms/). I will write down my own summary, including solution optimization methods and some thoughts on it，for some tricky problems from a beginner's perspective. And hope it's helpful to you. If there is any question or mistake, please feel free to contact me. Thank you!
+Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right now, I will keep on the practicing process on [LeetCode OJ](https://leetcode.com/problemset/algorithms/). I will write down my summary, including solution optimizing methods and some thoughts，for some tricky problems from a beginner's perspective. And hope it's helpful to you. If there is any question or mistake, please feel free to contact me. Thank you!
 
 ###Catalog
 1. [k Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/k-Sum.md)
