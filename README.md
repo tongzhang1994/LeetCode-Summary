@@ -1,6 +1,8 @@
 # LeetCode-Summary
-My personal summary of LeetCode problems, including solution optimization methods and some thoughts on it.
-There may be some mistakes since I am really a beginner. Please feel free to contact me. Thank you.
+
+Hi, everyone. I'm a graduate student majoring in Computer Science in USC. My course starts from this fall(2016) and ends on 2018 spring (2 years). Here is my Linkedin Profile.
+
+Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right now, I will keep on the practicing process on LeetCode OJ. I will write down my own summary, including solution optimization methods and some thoughts on it，for some tricky problems from a beginner's perspective. And hope it's helpful to you. If there is any question or mistake, please feel free to contact me. Thank you!
 
 ###Catalog
 1. [k Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/k-Sum.md)
