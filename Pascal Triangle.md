@@ -18,7 +18,7 @@ I think most people are familiar with Pascal Triangles and it might be easy for 
 Here is a picture version explanation to the solution above. Writing down each step on the paper, We can see that we are actually constructing the traigle in-place!  
 
 <div  align="center">    
-<img src="https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/pic_explanation/pascal.jpg" width = "500" height = "200" alt="pascal" align=center />
+<img src="https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/pic_explanation/pascal.jpg" width = "400" height = "220" alt="pascal" align=center />
 </div>
 
 *NOTE: we must construct the line from right to left to assure that the value we used is calculated during last iteration/line (not the current one).*
