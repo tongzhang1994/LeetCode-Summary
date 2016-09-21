@@ -20,3 +20,20 @@ Here is a picture version explanation to the solution above. Writing down each s
 ![pic](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/pic_explanation/pascal.jpg)
 
 *NOTE: we must construct the line from right to left to assure that the value we used is calculated during last iteration/line (not the current one).*
+
+Another version of code based on similar thought:
+
+```java
+	public List<Integer> getRow(int rowIndex) {        
+       List<Integer> ret = new ArrayList<Integer>();
+    	ret.add(1);
+    	for (int i = 1; i <= rowIndex; i++) {
+    		for (int j = i - 1; j >= 1; j--) {
+    			int tmp = ret.get(j - 1) + ret.get(j);
+    			ret.set(j, tmp);
+    		}
+    		ret.add(1);
+    	}
+    	return ret;
+    }
+```
