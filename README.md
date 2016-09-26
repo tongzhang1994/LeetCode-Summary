@@ -4,6 +4,9 @@ Hi, everyone. I'm a graduate student majoring in Computer Science in USC. My cou
 
 Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right now, I will keep on the practicing process on [LeetCode OJ](https://leetcode.com/problemset/algorithms/). I will write down my summary, including solution optimizing methods and some thoughts，for some tricky problems from a beginner's perspective. And hope it's helpful to you. If there is any question or mistake, please feel free to contact me. Thank you!
 
+### Tips and General Methods
+1. [Binary Search Coding Principles](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Binary%20Search%20Coding%20Principles.md)
+
 ###Catalog
 1. [k Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/k-Sum.md)
 2. [Rotation](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/rotation.md)    -*to be continued*

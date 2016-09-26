@@ -6,7 +6,7 @@ Today I'd like to generalize a series of universal principles wich I learnt from
 
 > When we are writing Binary Search, we should:
 > 
-> 1. **When shrinking the region, guaruntee that the target element is always in [left,right]**. Then write down the left and right border of the region. (In other words, whether to use mid+-1 or mid as the new left/right border.)
+> 1. **Guaruntee that the target element is always in [left,right] when shrinking the region**. Then write down the left and right border of the region. (In other words, whether to use mid+-1 or mid as the new left/right border.)
 > 
 > 2. Determine how to calculate `mid` based on how we shrinked our searching region. **If we wrote `left=mid` then we should use `mid=left+(right-left+1)/2`, otherwise `mid=left+(right-left)/2`.** (Since the later 'mid' rounds down to the left border. When `right=left+1`, `left` itself equals to `mid`. So if we previously wrote `left=mid`, the region wouldn't shrink in this step.)
 > 
