@@ -6,6 +6,8 @@ Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right n
 
 ### Tips and General Methods
 1. [Binary Search Coding Principles](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Binary%20Search%20Coding%20Principles.md)
+2. [XOR Swapping Method](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/XOR%20Swapping%20Method.md)
+3. [GCD](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/GCD.md)
 
 ###Catalog
 1. [k Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/k-Sum.md)

@@ -30,6 +30,10 @@ Time: O(n). Space: O(1)
 
 Time: O(n). Space: O(1)
 
+*You can read my tips first:
+[XOR Swapping Algorithm](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/XOR%20Swapping%20Method.md) |
+[GCD](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/GCD.md)*
+
 ```java 
 	public void rotate(int[] nums, int k) {
         k%=nums.length;
@@ -49,10 +53,6 @@ Time: O(n). Space: O(1)
         else    return gcd(b, a % b);
     }
 ```
-
-[XOR Swapping Algorithm](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/XOR%20Swapping%20Method.md)
-
-[GCD]()
 
 **[EXPLANATION](https://discuss.leetcode.com/topic/11349/my-three-way-to-solve-this-problem-the-first-way-is-interesting-java/20)**
 
