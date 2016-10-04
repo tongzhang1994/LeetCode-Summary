@@ -20,4 +20,8 @@ Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right n
 8. [Majority Element](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Majority%20Element.md)
 9. [Dynamic Programming](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Dinamic%20Programming-2D.md)    -*to be continued*
 10. [Find Peak Element](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Find%20Peak%20Element.md)     -*to be continued*
+11. [Heap](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md)
+12. [Intersection of Two Arrays](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Intersection%20of%20Two%20Arrays.md)     -*to be continued*
+13. [Backtracking](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Backtracking.md)  -*to be continued*
+
 
