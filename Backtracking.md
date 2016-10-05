@@ -42,6 +42,71 @@ Here is the code.
     }
 ```
 
+## [Subsets](https://leetcode.com/problems/subsets/)
+
+**Solution1: Bit Manipulation**
+
+> This solution directly captures the intrinsic connection between power set and binary numbers.
+When forming a subset, for each element, only 2 possiblities, either it is in the subset or not in the subset, hence we have total number of possible subsets = 2^n.Thinking each element as a bit, it's either on or off when forming the ith subset, and that's the solution!
+
+```java
+	public List<List<Integer>> subsets(int[] nums) {
+        //bit manipulation
+        List<List<Integer>> res=new ArrayList<List<Integer>>();
+        int setsNum=1<<nums.length;//2^nums.length
+        for(int i=0;i<setsNum;i++){
+            List<Integer> subset=new ArrayList<>();
+            for(int j=0;j<nums.length;j++)
+                if((i&(1<<j))!=0)//pay 
+                    subset.add(nums[j]);
+            res.add(subset);
+        }
+        return res;
+    }
+```
+
+**Solution2: Backtracking**
+
+```java
+	public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> res=new ArrayList<List<Integer>>();
+        backtracking(nums,res,new ArrayList<Integer>(),0);
+        return res;
+    }
+    //[] [1] [1,2] [1,2,3] [1,3] [2] [2,3] [3]
+    private void backtracking(int[] nums,List<List<Integer>> res,List<Integer> subset,int start){
+        res.add(new ArrayList<Integer>(subset));
+        for(int i=start;i<nums.length;i++){
+            subset.add(nums[i]);
+            backtracking(nums,res,subset,i+1);
+            subset.remove(subset.size()-1);
+        }
+    }
+```
+
+## [SubsetsII](https://leetcode.com/problems/subsets-ii/)
+
+```java
+public List<List<Integer>> subsetsWithDup(int[] nums) {
+        List<List<Integer>> res=new ArrayList<List<Integer>>();
+        Arrays.sort(nums);
+        backtracking(nums,res,new ArrayList<Integer>(),0);
+        return res;
+    }
+    
+    private void backtracking(int[] nums,List<List<Integer>> res,List<Integer> subset,int start){
+        res.add(new ArrayList<Integer>(subset));
+        for(int i=start;i<nums.length;i++){
+            if(i>start&&nums[i]==nums[i-1]) continue;
+            subset.add(nums[i]);
+            backtracking(nums,res,subset,i+1);
+            subset.remove(subset.size()-1);
+        }
+    }
+```
+
+
+
 ## [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 
 **Solution1: Backtracking(DFS)**
@@ -154,5 +219,67 @@ if all digits have been considered, then you get the final result.
         } 
         for(int i=start;i<bits.length;i++)
             backtracking(res1,bits,n-1,i+1,sum+bits[i]);
+    }
+```
+
+## [Combination Sum](https://leetcode.com/problems/combination-sum/)
+
+```java
+	public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> res=new ArrayList<List<Integer>>();
+        backtracking(candidates,res,new ArrayList<Integer>(),target,0);
+        return res;
+    }
+    private void backtracking(int[] candidates,List<List<Integer>> res,List<Integer> tmp,int sum,int start){
+        if(sum==0)    res.add(new ArrayList<Integer>(tmp));
+        for(int i=start;i<candidates.length;i++)
+            if(candidates[i]<=sum){
+                tmp.add(candidates[i]);
+                backtracking(candidates,res,tmp,sum-candidates[i],i);//i:the same number may be reused
+                tmp.remove(tmp.size()-1);
+            }
+    }
+```
+
+## [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
+
+```java
+	public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        Arrays.sort(candidates);
+        List<List<Integer>> res=new ArrayList<List<Integer>>();
+        backtracking(candidates,res,new ArrayList<Integer>(),target,0);
+        return res;
+    }
+    private void backtracking(int[] candidates,List<List<Integer>> res,List<Integer> tmp,int sum,int start){
+        if(sum==0)    res.add(new ArrayList<Integer>(tmp));
+        for(int i=start;i<candidates.length;i++){
+            if(i>start&&candidates[i]==candidates[i-1])  continue;
+            if(candidates[i]<=sum){
+                tmp.add(candidates[i]);
+                backtracking(candidates,res,tmp,sum-candidates[i],i+1);
+                tmp.remove(tmp.size()-1);
+            }
+        }
+    }
+```
+
+## [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
+
+```java
+	public List<List<Integer>> combinationSum3(int k, int n) {
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        backtracking(res, new ArrayList<Integer>(),n, k, 1);
+        return res;
+    }
+    private void backtracking(List<List<Integer>> res,List<Integer> tmp,int n,int k,int start){
+        if(n==0&&tmp.size()==k){
+            res.add(new ArrayList<Integer>(tmp));//no return
+            return;
+        }
+        for(int i=start;i<=9;i++){
+            tmp.add(i);
+            backtracking(res,tmp,n-i,k,i+1);//why not i+1??
+            tmp.remove(tmp.size()-1);
+        }
     }
 ```
