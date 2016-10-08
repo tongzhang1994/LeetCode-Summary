@@ -1,5 +1,18 @@
 # Problems with Math Solutions
 
+## [Gray Code](https://leetcode.com/problems/gray-code/)
+
+The idea is simple. G(i) = i^ (i/2). See more details in [WIKIPEDIA](https://en.wikipedia.org/wiki/Gray_code).
+
+```java
+	public List<Integer> grayCode(int n) {
+        List<Integer> res=new ArrayList<>();
+        for(int i=0;i<(1<<n);i++)
+            res.add(i^i>>1);
+        return res;
+    }
+```
+
 ## [Rotate Function](https://leetcode.com/problems/rotate-function/)
 
 We can see at first glance that this problem give us a formula of F(n) and Bk[n]. This immediately let us realize that maybe a math solution is suitable for this problem. 

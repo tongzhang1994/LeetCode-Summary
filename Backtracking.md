@@ -1,5 +1,8 @@
 # Backtracking
 
+> [Here are summary of some `classic Backtracking` problems](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Classic%20Backtrackings.md)
+
+The followings are backtracking problem with more than one solution or with a few tricky points in it.
 
 ## [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
 
