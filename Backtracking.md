@@ -1,5 +1,6 @@
 # Backtracking
 
+
 ## [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
 
 I was really inspired by [this post](http://www.1point3acres.com/bbs/forum.php?mod=redirect&goto=findpost&ptid=172641&pid=2237150&fromuid=96813). That guy summarized a general idea of `Backtracking`. I try to translate into English and add some supplemental materials.
@@ -41,70 +42,6 @@ Here is the code.
         if(right<left) backtracking(res,p+")",left,right+1,n);
     }
 ```
-
-## [Subsets](https://leetcode.com/problems/subsets/)
-
-**Solution1: Bit Manipulation**
-
-> This solution directly captures the intrinsic connection between power set and binary numbers.
-When forming a subset, for each element, only 2 possiblities, either it is in the subset or not in the subset, hence we have total number of possible subsets = 2^n.Thinking each element as a bit, it's either on or off when forming the ith subset, and that's the solution!
-
-```java
-	public List<List<Integer>> subsets(int[] nums) {
-        //bit manipulation
-        List<List<Integer>> res=new ArrayList<List<Integer>>();
-        int setsNum=1<<nums.length;//2^nums.length
-        for(int i=0;i<setsNum;i++){
-            List<Integer> subset=new ArrayList<>();
-            for(int j=0;j<nums.length;j++)
-                if((i&(1<<j))!=0)//pay 
-                    subset.add(nums[j]);
-            res.add(subset);
-        }
-        return res;
-    }
-```
-
-**Solution2: Backtracking**
-
-```java
-	public List<List<Integer>> subsets(int[] nums) {
-        List<List<Integer>> res=new ArrayList<List<Integer>>();
-        backtracking(nums,res,new ArrayList<Integer>(),0);
-        return res;
-    }
-    //[] [1] [1,2] [1,2,3] [1,3] [2] [2,3] [3]
-    private void backtracking(int[] nums,List<List<Integer>> res,List<Integer> subset,int start){
-        res.add(new ArrayList<Integer>(subset));
-        for(int i=start;i<nums.length;i++){
-            subset.add(nums[i]);
-            backtracking(nums,res,subset,i+1);
-            subset.remove(subset.size()-1);
-        }
-    }
-```
-
-## [SubsetsII](https://leetcode.com/problems/subsets-ii/)
-
-```java
-public List<List<Integer>> subsetsWithDup(int[] nums) {
-        List<List<Integer>> res=new ArrayList<List<Integer>>();
-        Arrays.sort(nums);
-        backtracking(nums,res,new ArrayList<Integer>(),0);
-        return res;
-    }
-    
-    private void backtracking(int[] nums,List<List<Integer>> res,List<Integer> subset,int start){
-        res.add(new ArrayList<Integer>(subset));
-        for(int i=start;i<nums.length;i++){
-            if(i>start&&nums[i]==nums[i-1]) continue;
-            subset.add(nums[i]);
-            backtracking(nums,res,subset,i+1);
-            subset.remove(subset.size()-1);
-        }
-    }
-```
-
 
 
 ## [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
@@ -222,64 +159,25 @@ if all digits have been considered, then you get the final result.
     }
 ```
 
-## [Combination Sum](https://leetcode.com/problems/combination-sum/)
+
+## [Word Search](https://leetcode.com/problems/word-search/)
+
+This problem seems tricky, but it is easy if you've understand it. Just go through the board, check if each board element match the first charactor of String `s`, and recursively call backtracking method to check its ajacent cells. The only different thing you need to do is to store the state(visited or not visited) of each grid since `The same letter cell may not be used more than once.`.
 
 ```java
-	public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List<List<Integer>> res=new ArrayList<List<Integer>>();
-        backtracking(candidates,res,new ArrayList<Integer>(),target,0);
-        return res;
+	public boolean exist(char[][] board, String word) {
+        for(int i=0;i<board.length;i++)
+            for(int j=0;j<board[0].length;j++)
+                if(backtracking(board,word,i,j,0))   return true;
+        return false;
     }
-    private void backtracking(int[] candidates,List<List<Integer>> res,List<Integer> tmp,int sum,int start){
-        if(sum==0)    res.add(new ArrayList<Integer>(tmp));
-        for(int i=start;i<candidates.length;i++)
-            if(candidates[i]<=sum){
-                tmp.add(candidates[i]);
-                backtracking(candidates,res,tmp,sum-candidates[i],i);//i:the same number may be reused
-                tmp.remove(tmp.size()-1);
-            }
-    }
-```
-
-## [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
-
-```java
-	public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        Arrays.sort(candidates);
-        List<List<Integer>> res=new ArrayList<List<Integer>>();
-        backtracking(candidates,res,new ArrayList<Integer>(),target,0);
-        return res;
-    }
-    private void backtracking(int[] candidates,List<List<Integer>> res,List<Integer> tmp,int sum,int start){
-        if(sum==0)    res.add(new ArrayList<Integer>(tmp));
-        for(int i=start;i<candidates.length;i++){
-            if(i>start&&candidates[i]==candidates[i-1])  continue;
-            if(candidates[i]<=sum){
-                tmp.add(candidates[i]);
-                backtracking(candidates,res,tmp,sum-candidates[i],i+1);
-                tmp.remove(tmp.size()-1);
-            }
-        }
-    }
-```
-
-## [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
-
-```java
-	public List<List<Integer>> combinationSum3(int k, int n) {
-        List<List<Integer>> res = new ArrayList<List<Integer>>();
-        backtracking(res, new ArrayList<Integer>(),n, k, 1);
-        return res;
-    }
-    private void backtracking(List<List<Integer>> res,List<Integer> tmp,int n,int k,int start){
-        if(n==0&&tmp.size()==k){
-            res.add(new ArrayList<Integer>(tmp));//no return
-            return;
-        }
-        for(int i=start;i<=9;i++){
-            tmp.add(i);
-            backtracking(res,tmp,n-i,k,i+1);//why not i+1??
-            tmp.remove(tmp.size()-1);
-        }
+    private boolean backtracking(char[][] board,String word,int i,int j,int idx){
+        if(idx==word.length())    return true;
+        if(i<0||j<0||i==board.length||j==board[0].length)   return false;
+        if(board[i][j]!=word.charAt(idx))   return false;
+        board[i][j]^=256;//bit mask->invalid char
+        boolean exist=backtracking(board,word,i+1,j,idx+1)||backtracking(board,word,i,j+1,idx+1)||backtracking(board,word,i-1,j,idx+1)||backtracking(board,word,i,j-1,idx+1);
+        board[i][j]^=256;//bit mask->valid char
+        return exist;
     }
 ```
