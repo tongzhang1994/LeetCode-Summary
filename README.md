@@ -56,7 +56,7 @@ Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right n
     [Subsets](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Classic%20Backtrackings.md#subsets) <br/>
     [Subsets II](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Classic%20Backtrackings.md#subsetsii) <br/>
 
-14. [Tree Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md)<br/>
+14. [**Tree Traversal**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md)<br/>
     [Binary Tree Preorder Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-preorder-traversal)<br/>
     [Binary Tree Inorder Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-inorder-traversal)<br/>
     [Binary Tree Postorder Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-postorder-traversal)<br/>
