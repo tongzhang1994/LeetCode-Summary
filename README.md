@@ -56,9 +56,9 @@ Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right n
     [Subsets](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Classic%20Backtrackings.md#subsets) <br/>
     [Subsets II](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Classic%20Backtrackings.md#subsetsii) <br/>
 
-14. [Tree Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md)
-    [Binary Tree Preorder Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-preorder-traversal)
-    [Binary Tree Inorder Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-inorder-traversal)
-    [Binary Tree Postorder Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-postorder-traversal)
-    [Binary Tree Level Order Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-level-order-traversal)
-    [Binary Tree Zigzag Level Order Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-zigzag-level-order-traversal)
+14. [Tree Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md)<br/>
+    [Binary Tree Preorder Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-preorder-traversal)<br/>
+    [Binary Tree Inorder Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-inorder-traversal)<br/>
+    [Binary Tree Postorder Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-postorder-traversal)<br/>
+    [Binary Tree Level Order Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-level-order-traversal)<br/>
+    [Binary Tree Zigzag Level Order Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-zigzag-level-order-traversal)<br/><br/>
