@@ -32,8 +32,8 @@ Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right n
    [Contains Duplicate I](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Contains%20Duplicate.md#contains-duplicate-i)<br/>
    [Contains Duplicate II](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Contains%20Duplicate.md#contains-duplicate-ii)<br/><br/>
 8. [**Majority Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Majority%20Element.md)<br/><br/>
-9. [**Dynamic Programming**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Dinamic%20Programming-2D.md)    -*to be continued*<br/>
-   [Minimum Path Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Dinamic%20Programming-2D.md#minimum-path-sum)<br/><br/>
+9. [**Dynamic Programming**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Dynamic%20Programming-2D.md)    -*to be continued*<br/>
+   [Minimum Path Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Dynamic%20Programming-2D.md#minimum-path-sum)<br/><br/>
 10. [**Find Peak Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Find%20Peak%20Element.md)     -*to be continued*<br/><br/>
 11. [**Heap**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md)<br/>
     [K-th Smallest Element in a Sorted Matrix](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md#k-th-smallest-element-in-a-sorted-matrix) <br/>
