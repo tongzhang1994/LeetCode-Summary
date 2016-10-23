@@ -107,30 +107,45 @@ The code runs in O(nlogn+n^2)=`O(n^2)` time. Space complexity is `O(n)`.
 
 This problem can be solved in `O(n^3)` apparently. Similar as before, the code is as follows.
 
+Some modifications:
+
+- To avoid duplicate list items, I skip unnecessary indices at two locations:
+- one at the end of the outer loop (i-loop)
+- the other at the end of the inner loop (j-loop).
+
+To avoid useless computations, the following is kind of critical:
+
+- the function return immediately when nums[i]*4 > target
+- the inner loop break immediately when nums[j]*4 < target.
+
+These two lines save quite some time due to the set up of the test cases in OJ.
+
 ```java 
-public List<List<Integer>> fourSum(int[] nums, int target) {
-        List<List<Integer>> res=new ArrayList<List<Integer>>();
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> list = new ArrayList<List<Integer>>();
         Arrays.sort(nums);
-        if(nums.length<4)    return res;
-        for(int i=0;i<nums.length-3;i++){
-            if(i>0&&nums[i]==nums[i-1])  continue;
-            for(int j=i+1;j<nums.length-2;j++){
-                if(j>i+1&&nums[j]==nums[j-1])   continue;
-                int l=j+1,h=nums.length-1;
-                while(l<h){
-                    int sum=nums[i]+nums[j]+nums[l]+nums[h];
-                    if(sum==target){
-                        res.add(Arrays.asList(nums[i],nums[j],nums[l],nums[h]));
-                        while(l<h&&nums[l]==nums[l+1])  l++;
-                        while(l<h&&nums[h]==nums[h-1])  h--;
-                        l++;
-                        h--;
-                    }else if(sum<target)    l++;
-                    else    h--;
+        int second = 0, third = 0, nexti = 0, nextj = 0;
+        for(int i=0, L=nums.length; i<L-3; i++) {
+            if(nums[i]<<2 > target) return list; // return immediately
+            for(int j=L-1; j>i+2; j--) {
+                if(nums[j]<<2 < target) break; // break immediately
+                int rem = target-nums[i]-nums[j];
+                int lo = i+1, hi=j-1;
+                while(lo<hi) {
+                    int sum = nums[lo] + nums[hi];
+                    if(sum>rem) --hi;
+                    else if(sum<rem) ++lo;
+                    else {
+                        list.add(Arrays.asList(nums[i],nums[lo],nums[hi],nums[j]));
+                        while(++lo<=hi && nums[lo-1]==nums[lo]) continue; // avoid duplicate results
+                        while(--hi>=lo && nums[hi]==nums[hi+1]) continue; // avoid duplicate results
+                    }
                 }
+                while(j>=1 && nums[j]==nums[j-1]) --j; // skip inner loop
             }
+            while(i<L-1 && nums[i]==nums[i+1]) ++i; // skip outer loop
         }
-        return res;
+        return list;
     }
 ```
 
@@ -207,11 +222,5 @@ private boolean check(Pair p1, Pair p2)
 }  
 ```
 
-This solution is faster and can be extended to all k Sum problems but would be quite complicated. So this is not very suitable to be asked in an interview. Just remembering the detailed thinking method is enough.
-
-
-
-
-
-
+[This solution](http://blog.csdn.net/linhuanmars/article/details/24826871) is faster and can be extended to all k Sum problems but would be quite complicated. So this is not very suitable to be asked in an interview. Just remembering the detailed thinking method is enough.
 
