@@ -59,6 +59,15 @@ Time:O(n). Space:O(1)
 
 Time: O(n). Space: O(1)
 
+> This is an extension of `solution 2`. Instead of moving one by one, divide the array in different sets
+where number of sets is equal to GCD of n and d and move the elements within sets.
+If GCD is 1 as is for the above example array (n = 7 and d =2), then elements will be moved within one set only, we just start with temp = arr[0] and keep moving arr[I+d] to arr[I] and finally store temp at the right place.
+> Here is an example for n =12 and d = 3. GCD is 3 and
+
+<div  align="center">    
+<img src="https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/pic_explanation/jumping%20algorithm.png" width = "600" height = "400" alt="jumping" align=center />
+</div>
+
 *You can read my tips first:
 [XOR Swapping Algorithm](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/XOR%20Swapping%20Method.md) |
 [GCD](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/GCD.md)*
@@ -115,6 +124,6 @@ Then we continue processing path1(swap index1 and position element):
 
 [7,2,1,4,3,6,5,8] position = 3 -> [7,4,1,2,3,6,5,8] position = 5 -> [7,6,1,2,3,4,5,8] position = 7 ->[7,8,1,2,3,4,5,6] -> path1 finished -> all path finished we get the result [7,8,1,2,3,4,5,6]
 
->NOTE: This algorithm is very similar to the `juggling algorithm` proposed in 'Programming Perl'. Some related links to help understand are as follows.
-[http://www.geeksforgeeks.org/array-rotation/](http://www.geeksforgeeks.org/array-rotation/)
+> NOTE: This algorithm is very similar to the `juggling algorithm` proposed in 'Programming Perl'. Some related links to help understand are as follows.
+[http://www.geeksforgeeks.org/array-rotation/](http://www.geeksforgeeks.org/array-rotation/)<br/>
 [http://stackoverflow.com/questions/23321216/rotating-an-array-using-juggling-algorithm](http://stackoverflow.com/questions/23321216/rotating-an-array-using-juggling-algorithm)
