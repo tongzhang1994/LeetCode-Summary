@@ -22,11 +22,40 @@ Time: O(n). Space:O(n).
 
 Time: O(n). Space: O(1)
 
-*I haven't solved it yet. I'll come back as soon as I fix my bug...*
+```java
+	public void rotate(int[] nums, int k) {
+        int n=nums.length;
+        for(int i=0;i<k;i++){//k rotations
+            int tmp=nums[n-1];
+            for(int j=n-1;j>0;j--)//rotate one by one
+                nums[j]=nums[j-1];
+            nums[0]=tmp;
+        }
+    }
+```
 
+**3.3 reverse thinking**
 
+Time:O(n). Space:O(1)
 
-**3.juggling algorithm**
+```java
+    public void rotate(int[] nums, int k) {
+        k%=nums.length;
+        reverse(nums,0,nums.length-1);
+        reverse(nums,0,k-1);
+        reverse(nums,k,nums.length-1);
+    }
+    
+    private void reverse(int[] nums,int start,int end){
+        while(start<end){
+            int tmp=nums[start];
+            nums[start++]=nums[end];
+            nums[end--]=tmp;
+        }
+    }
+```
+
+**4.juggling algorithm**
 
 Time: O(n). Space: O(1)
 
@@ -56,7 +85,7 @@ Time: O(n). Space: O(1)
 
 **[EXPLANATION](https://discuss.leetcode.com/topic/11349/my-three-way-to-solve-this-problem-the-first-way-is-interesting-java/20)**
 
-Here use a example input array [1,2,3,4,5,6,7,8] (n = 8) to explain:
+Here use a example input array \[1,2,3,4,5,6,7,8\] (n = 8) to explain:
 
 - suppose k = 3:
 
