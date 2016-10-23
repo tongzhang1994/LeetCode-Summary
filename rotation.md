@@ -96,14 +96,19 @@ Here use a example input array \[1,2,3,4,5,6,7,8\] (n = 8) to explain:
 - suppose k = 3:
 
 > GCD = gcd(3,8) = 1, which means there is only one path.
->
 > Count = (n / GCD) - 1 = 7, which means we need 7 swaps to finish the path. (actually for a path have x element, we need x - 1 swaps).
 >
 >Then we can simulate the process of the algorithm,
->
 >path0(each time swap index0 element and indexPosition element):
->
->[1,2,3,4,5,6,7,8] position = 3 -> [4,2,3,1,5,6,7,8]  position = 6 -> [7,2,3,1,5,6,4,8] position = 1 -> [2,7,3,1,5,6,4,8] position = 4 -> [5,7,3,1,2,6,4,8] position = 7 -> [8,7,3,1,2,6,4,5] position = 2 -> [3,7,8,1,2,6,4,5] position = 5 -> [6,7,8,1,2,3,4,5] -> finished, total 7 times swap. Final result [6,7,8,1,2,3,4,5]
+>[1,2,3,4,5,6,7,8] 
+> position = 3 -> [4,2,3,1,5,6,7,8]  
+> position = 6 -> [7,2,3,1,5,6,4,8] 
+> position = 1 -> [2,7,3,1,5,6,4,8] 
+> position = 4 -> [5,7,3,1,2,6,4,8] 
+> position = 7 -> [8,7,3,1,2,6,4,5] 
+> position = 2 -> [3,7,8,1,2,6,4,5] 
+> position = 5 -> [6,7,8,1,2,3,4,5] -> finished, total 7 times swap. 
+> Final result [6,7,8,1,2,3,4,5]
 
 - suppose k = 2:
 
