@@ -21,17 +21,17 @@ public int[] twoSum(int[] nums, int target) {
 }
 ```
 
-**2.Two pointers squeezing**
+**2.Two pointers squeezing(not suitable for this problem)**
 
 First we have to sort the array. Then we `squeeze two pointers` from each end of the array to find the target pair.
 
 ```java 
-public int[] twoSum(int[] numbers, int target) {    
-    Arrays.sort(numbers);  
-    int l = 0,r = numbers.length-1;  
+public int[] twoSum(int[] nums, int target) {    
+    Arrays.sort(nums);  
+    int l = 0,r = nums.length-1;  
     while(l<r)    
-        if(numbers[l]+numbers[r]==target)     return new int[]{nums[l],nums[r]};  
-        else if(numbers[l]+numbers[r]>target)    r--;   
+        if(nums[l]+nums[r]==target)     return new int[]{nums[l],nums[r]};  
+        else if(nums[l]+nums[r]>target)    r--;   
         else   l++;    
     return new int[]{0,0};  
 }  
