@@ -11,15 +11,15 @@
 
 1. [**k Sum**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/k-Sum.md)<br/>
    [2 Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/k-Sum.md#2-sum)--exactly one solution/no duplicates<br/>
-   -HashMap:O(n) <=no duplicate<br/>
-   -Sort+Two Pointers:O(nlogn); if sorted:O(n)<br/>
+   - HashMap:O(n) <=no duplicate<br/>
+   - Sort+Two Pointers:O(nlogn); if sorted:O(n)<br/>
    [3 Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/k-Sum.md#3-sum)-contains duplicates<br/>
-   -Sort+Two Pointers:O(n^2)<br/>
+   - Sort+Two Pointers:O(n^2)<br/>
    [3 Sum Closest](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/k-Sum.md#3-sum-closest)<br/>
-   -Sort+Two Pointers:O(n^2), cannot use hashmap since it looks for the closest answer instead of the exact one.<br/>
+   - Sort+Two Pointers:O(n^2), cannot use hashmap since it looks for the closest answer instead of the exact one.<br/>
    [4 Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/k-Sum.md#4-sum) <br/>
-   -Sort+Two Pointers:O(n^3),some modifications to avoid useless computations<br/>
-   -'Two Sum' solution:O(n^2*logn)<br/>
+   - Sort+Two Pointers:O(n^3),some modifications to avoid useless computations<br/>
+   - 'Two Sum' solution:O(n^2*logn)<br/>
 2. [**Rotation**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/rotation.md)    -*to be continued*<br/>
    [Rotate Array](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/rotation.md#rotate-array)<br/><br/>
 3. [**Pascal's Triangle II**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Pascal%20Triangle.md)
