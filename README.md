@@ -46,31 +46,27 @@ Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right n
 1. [**Best Time to Buy and Sell Stock**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Best%20Time%20to%20Buy%20and%20Sell%20Stock.md)    -*to be continued*<br/>
    [Best Time to Buy and Sell Stock](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Best%20Time%20to%20Buy%20and%20Sell%20Stock.md#best-time-to-buy-and-sell-stock-i)<br/>
    [Best Time to Buy and Sell Stock II](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Best%20Time%20to%20Buy%20and%20Sell%20Stock.md#best-time-to-buy-and-sell-stock-ii)<br/>
-   [Best Time to Buy and Sell Stock with Cooldown](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Best%20Time%20to%20Buy%20and%20Sell%20Stock.md#best-time-to-buy-and-sell-stock-with-cooldown)<br/><br/>
-<<<<<<< HEAD
-2. [**Majority Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Majority%20Element.md)<br/><br/>
+   [Best Time to Buy and Sell Stock with Cooldown](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Best%20Time%20to%20Buy%20and%20Sell%20Stock.md#best-time-to-buy-and-sell-stock-with-cooldown)<br/>
+
+2. [**Majority Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Majority%20Element.md)<br/>
 3. [**Dynamic Programming - 2D**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Dinamic%20Programming-2D.md)    -*to be continued*<br/>
-   [Minimum Path Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Dinamic%20Programming-2D.md#minimum-path-sum)<br/><br/>
-   
+   [Minimum Path Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Dinamic%20Programming-2D.md#minimum-path-sum)
+      
 ### Binary Search
 
-1. [**Find Peak Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Find%20Peak%20Element.md)     -*to be continued*<br/><br/>
+1. [**Find Peak Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Find%20Peak%20Element.md)     -*to be continued*
 
 ### Heap
 
-1. [**Heap**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md)<br/>
-=======
-7. [**Contains Duplicate**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Contains%20Duplicate.md) -**not finnished yet**<br/>
+1. [**Heap**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md)
+2. [**Contains Duplicate**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Contains%20Duplicate.md) -**not finnished yet**<br/>
    [Contains Duplicate I](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Contains%20Duplicate.md#contains-duplicate-i)<br/>
-   [Contains Duplicate II](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Contains%20Duplicate.md#contains-duplicate-ii)<br/><br/>
-8. [**Majority Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Majority%20Element.md)<br/><br/>
-9. [**Dynamic Programming**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Dynamic%20Programming-2D.md)    -*to be continued*<br/>
-   [Minimum Path Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Dynamic%20Programming-2D.md#minimum-path-sum)<br/><br/>
-10. [**Find Peak Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Find%20Peak%20Element.md)     -*to be continued*<br/><br/>
-11. [**Heap**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md)<br/>
->>>>>>> origin/master
+   [Contains Duplicate II](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Contains%20Duplicate.md#contains-duplicate-ii)<br/>
+3. [**Majority Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Majority%20Element.md)
+4. [**Find Peak Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Find%20Peak%20Element.md)     -*to be continued*<br/>
+5. [**Heap**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md)<br/>
     [K-th Smallest Element in a Sorted Matrix](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md#k-th-smallest-element-in-a-sorted-matrix) <br/>
-    [Find K Pairs with Smallest Sums](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md#find-k-pairs-with-smallest-sums) <br/> <br/>
+    [Find K Pairs with Smallest Sums](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md#find-k-pairs-with-smallest-sums)  
 
 ### Backtracking
 
@@ -83,17 +79,19 @@ Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right n
     [Permutation](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Classic%20Backtrackings.md#permutation) <br/>
     [Permutation II](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Classic%20Backtrackings.md#permutation-ii) <br/>
     [Subsets](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Classic%20Backtrackings.md#subsets) <br/>
-    [Subsets II](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Classic%20Backtrackings.md#subsetsii) <br/>
+    [Subsets II](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Classic%20Backtrackings.md#subsetsii) 
     
 2. [**Backtracking**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Backtracking.md) <br/>
     [Generate Parentheses](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Backtracking.md#generate-parentheses) <br/>
     [Letter Combinations of a Phone Number](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Backtracking.md#letter-combinations-of-a-phone-number) <br/>
     [Binary Watch](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Backtracking.md#binary-watch) <br/>
-    [Word Search](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Backtracking.md#word-search) <br/> <br/>
+    [Word Search](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Backtracking.md#word-search)
 
-14. [**Tree Traversal**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md)<br/>
+### Tree
+
+1. [**Tree Traversal**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md)<br/>
     [Binary Tree Preorder Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-preorder-traversal)<br/>
     [Binary Tree Inorder Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-inorder-traversal)<br/>
     [Binary Tree Postorder Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-postorder-traversal)<br/>
     [Binary Tree Level Order Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-level-order-traversal)<br/>
-    [Binary Tree Zigzag Level Order Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-zigzag-level-order-traversal)<br/><br/>
+    [Binary Tree Zigzag Level Order Traversal](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Tree%20Traversal.md#binary-tree-zigzag-level-order-traversal)<br/>
