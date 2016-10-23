@@ -26,9 +26,11 @@ Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right n
    [Contains Duplicate I](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Contains%20Duplicate.md#contains-duplicate-i)<br/>
    [Contains Duplicate II](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Contains%20Duplicate.md#contains-duplicate-ii)<br/><br/>
 5. [**Intersection of Two Arrays**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Intersection%20of%20Two%20Arrays.md)     -*to be continued* <br/>
-    [Intersection of Two Arrays I](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Intersection%20of%20Two%20Arrays.md#intersection-of-two-arrays-i) <br/> <br/>
+    [Intersection of Two Arrays I](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Intersection%20of%20Two%20Arrays.md#intersection-of-two-arrays-i) <br/>
 
+### String
 
+1. [**String**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/String.md)
 
 ### Math
    
@@ -38,7 +40,7 @@ Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right n
    
 ### LinkedList
 
-1. [**LinkedList — fast & slow pointers**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/LinkedList%20with%20Fast%20%26%20Slow%20Pointers.md)<br/>
+1. [**Fast & Slow Pointers**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/LinkedList%20with%20Fast%20%26%20Slow%20Pointers.md)<br/>
    [Rotate List](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/LinkedList%20with%20Fast%20%26%20Slow%20Pointers.md#rotate-list)<br/><br/>
    
 ### Dynamic Programming
@@ -47,7 +49,6 @@ Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right n
    [Best Time to Buy and Sell Stock](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Best%20Time%20to%20Buy%20and%20Sell%20Stock.md#best-time-to-buy-and-sell-stock-i)<br/>
    [Best Time to Buy and Sell Stock II](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Best%20Time%20to%20Buy%20and%20Sell%20Stock.md#best-time-to-buy-and-sell-stock-ii)<br/>
    [Best Time to Buy and Sell Stock with Cooldown](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Best%20Time%20to%20Buy%20and%20Sell%20Stock.md#best-time-to-buy-and-sell-stock-with-cooldown)<br/>
-
 2. [**Majority Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Majority%20Element.md)<br/>
 3. [**Dynamic Programming - 2D**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Dinamic%20Programming-2D.md)    -*to be continued*<br/>
    [Minimum Path Sum](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Dinamic%20Programming-2D.md#minimum-path-sum)
@@ -58,13 +59,7 @@ Currently, I'm preparing for the upcoming Recuitment. Despite a beginner right n
 
 ### Heap
 
-1. [**Heap**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md)
-2. [**Contains Duplicate**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Contains%20Duplicate.md) -**not finnished yet**<br/>
-   [Contains Duplicate I](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Contains%20Duplicate.md#contains-duplicate-i)<br/>
-   [Contains Duplicate II](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Contains%20Duplicate.md#contains-duplicate-ii)<br/>
-3. [**Majority Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Majority%20Element.md)
-4. [**Find Peak Element**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Find%20Peak%20Element.md)     -*to be continued*<br/>
-5. [**Heap**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md)<br/>
+1. [**Heap**](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md)<br/>
     [K-th Smallest Element in a Sorted Matrix](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md#k-th-smallest-element-in-a-sorted-matrix) <br/>
     [Find K Pairs with Smallest Sums](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/Heap.md#find-k-pairs-with-smallest-sums)  
 
