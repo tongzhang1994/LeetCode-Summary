@@ -59,11 +59,15 @@ Time:O(n). Space:O(1)
 
 Time: O(n). Space: O(1)
 
-> This is an extension of `solution 2`. Instead of moving one by one, divide the array in different sets
+> GeeksforGeeks:
+
+This is an extension of `solution 2`. Instead of moving one by one, divide the array in different sets
 where number of sets is equal to GCD of n and d and move the elements within sets.
+
 If GCD is 1 as is for the above example array (n = 7 and d =2), then elements will be moved within one set only, we just start with temp = arr[0] and keep moving arr[I+d] to arr[I] and finally store temp at the right place.
-> Here is an example for n =12 and d = 3. GCD is 3 and
-> <div  align="center"><img src="https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/pic_explanation/jumping%20algorithm.png" width = "600" height = "400" alt="jumping" align=center /></div>
+
+Here is an example for n =12 and d = 3. GCD is 3 and
+<div  align="center"><img src="https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/pic_explanation/jumping%20algorithm.png" width = "600" height = "400" alt="jumping" align=center /></div>
 
 *You can read my tips first:
 [XOR Swapping Algorithm](https://github.com/TongZhangUSC/LeetCode-Summary/blob/master/XOR%20Swapping%20Method.md) |
