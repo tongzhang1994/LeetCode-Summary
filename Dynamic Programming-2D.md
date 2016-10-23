@@ -1,4 +1,4 @@
-# Dinamic Programming-2D
+# Dynamic Programming-2D
 
 ## [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
 
