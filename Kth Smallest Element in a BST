@@ -1,0 +1,115 @@
+# [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+
+The in-order traversal of a BST outputs the nodes in sorted order. So we can just do inorder traversal and check for the `k-th` node.
+
+Time: O(n), Space: O(n)
+
+**In-order Traversal - Recursion**
+
+```java
+	private int count=0;
+    private int res=Integer.MIN_VALUE;
+    public int kthSmallest(TreeNode root, int k) {
+        traverse(root,k);
+        return res;
+    }
+    private void traverse(TreeNode node,int k){
+        if(node==null)  return;
+        traverse(node.left,k);
+        count++;
+        if(count==k) res=node.val;
+        if(count<k) traverse(node.right,k);
+    }
+```
+**In-order Traversal - Iteration**
+
+```java
+	public int kthSmallest(TreeNode root, int k) {
+        Stack<TreeNode> stack=new Stack<>();
+        TreeNode node=root;
+        int count=0;
+        while(!stack.empty()||node!=null){
+            if(node!=null){
+                stack.push(node);
+                node=node.left;
+            }else{
+                if((++count)==k)  return stack.peek().val;//NOTE:not count++!!!
+                node=stack.pop().right;
+            }
+        }
+        return Integer.MIN_VALUE;
+    }
+```
+
+> **Follow up:**
+> 
+> What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?
+> 
+> **Hint:**
+> 
+> Try to utilize the property of a BST.
+> 
+> What if you could modify the BST node's structure?
+> 
+> The optimal runtime complexity is O(height of BST).
+
+We can ***augment the BST tree structure*** to have each node in it store the number of elements in its left subtree. With this piece of information, it is simple to traverse the tree by repeatedly asking for the number of elements in the left subtree, to decide whether to do recurse into the left or right subtree.
+
+Now, suppose we are at node T:
+
+1. If k == num_elements(left subtree of T)-1, then the answer we're looking for is the value in node T.
+2. If k >= num_elements(left subtree of T), then obviously we can ignore the left subtree, because those elements will also be smaller than the kth smallest. So, we reduce the problem to finding the k - num_elements(left subtree of T) smallest element of the right subtree.
+3. If k < num_elements(left subtree of T)-1, then the kth smallest is somewhere in the left subtree, so we reduce the problem to finding the kth smallest element in the left subtree.
+
+***Complexity analysis***
+
+Time: O(n) + **O(nlogn)**
+
+If we could add a count field in the BST node class, it will take O(n) time when we calculate the count value for the whole tree, ***but after that, it will take O(logn) time when insert/delete a node or calculate the kth smallest element.***
+
+```java
+public int kthSmallest(TreeNode root, int k) {
+    TreeNodeWithCount rootWithCount=buildTreeWithCount(root);
+    return kthSmallest(rootWithCount, k);
+}
+
+private TreeNodeWithCount buildTreeWithCount(TreeNode root) {
+    if (root==null) return null;
+    TreeNodeWithCount rootWithCount=new TreeNodeWithCount(root.val);
+    rootWithCount.left=buildTreeWithCount(root.left);
+    rootWithCount.right=buildTreeWithCount(root.right);
+    if (rootWithCount.left !=null) rootWithCount.count +=rootWithCount.left.count;
+    if (rootWithCount.right !=null) rootWithCount.count +=rootWithCount.right.count;
+    return rootWithCount;
+}
+
+private int kthSmallest(TreeNodeWithCount rootWithCount, int k) {
+    if (k <=0 || k > rootWithCount.count) return -1;
+    if (rootWithCount.left !=null) {
+        if (rootWithCount.left.count >=k) return kthSmallest(rootWithCount.left, k);
+        if (rootWithCount.left.count==k-1) return rootWithCount.val;
+        return kthSmallest(rootWithCount.right, k-1-rootWithCount.left.count);
+    }
+    else {
+        if (k==1) return rootWithCount.val;
+        return kthSmallest(rootWithCount.right, k-1);
+    }
+}
+
+class TreeNodeWithCount {
+    int val;
+    int count;
+    TreeNodeWithCount left;
+    TreeNodeWithCount right;
+    TreeNodeWithCount(int x) {
+        val=x;
+        count=1;
+    }
+}
+```
+
+
+NOTICE: DO NOT RECORD THE ORDER DIRECTLY (the order of current element, i.e. # of element in left subtree+1)
+
+What you stored in TreeNodeWithCount is the order of its value, not the count of its children. So you will not achieve the target which takes O(logn) time when insert/delete a node or calculate the kth smallest element after.
+For example, if a number less than the min value of the BST inserted, you will have to change the order of all the nodes. This will cost O(n) time, not O(logn);
